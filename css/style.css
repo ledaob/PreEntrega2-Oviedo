@@ -1,0 +1,320 @@
+/*---CSS---*/
+
+
+/* RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Khand", sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #4f4f4f;
+    padding-top: 10px;
+}
+
+
+    
+
+header{
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    box-shadow: 5px 5px 2px  black;
+
+}
+
+
+
+/*LOGO*/
+.logo{  
+    max-width: 10%;    
+    padding: 10px;
+    
+    
+}
+
+/* estilos de navbar*/
+.color-bg{
+    background-color: #4f4f4f;
+}
+
+.nav-link{
+    color: #dcdcdc;
+}
+
+.nav-link:active{
+    background-color: darkgray;
+    text-decoration: underline;
+}
+
+
+
+
+/*FONDO DE TODOS LOS HTML*/
+body{
+    background-color: #dcdcdc;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*VIDEO INDEX*/
+video{ 
+    width: 97%;
+    margin: 15px;
+    box-shadow: 5px 5px #4f4f4f;
+    border-radius: 15px;
+    
+    
+}
+
+
+/*ETIQUETAS H3 DE TODOS LOS HTML*/
+h3{
+    color: #191919;
+    font-size: large;
+    text-align: start;
+
+}
+
+/* --- ESTILO PRODUCTOS --- */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.product{    
+    
+    padding: 10px;
+    
+}
+
+.product img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.product img:hover{
+    transform: scale(1, 1.2);
+
+}
+
+div .texto-producto{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* --- ESTILO SERVICIOS --- */
+
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+}
+
+.servicio{
+    padding: 10px;
+}
+
+
+
+.img-services{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform .2s;
+    margin: 10px;
+
+
+}
+
+.img-services-derecha{
+    width: 100%;    
+    justify-content: flex-end; 
+    position: relative;
+    left: 70px;  
+    margin: 10px;
+    border-radius: 20px;
+
+
+}
+
+.img-services:hover{
+    transform: scale(1, 1.2);
+}
+
+.img-services-derecha:hover{
+    transform: scale(1, 1.2);
+}
+
+div.texto-services{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+/*FOOTER*/
+.footer{
+    text-align: center;
+    text-decoration: underline;    
+    font-size: medium;
+    
+}
+
+
+
+.footer-item-facebook:hover{
+    color:blue;
+}
+
+.footer-item-instagram:hover{
+    color: magenta;
+}
+
+.footer-item-whatsapp:hover{
+    color: greenyellow;
+}
+
+
+footer{
+    background-color:#4f4f4f;
+    color: #dcdcdc;
+    font-weight: bold;
+    padding: 0.1px;
+    margin: 10px;
+
+    border-radius: 10px;
+        
+}
+
+footer nav ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 0;
+    
+    
+}
+a{
+    color: #dcdcdc;
+    font-size: medium;
+    
+}
+
+nav ul li .footer-item:hover{
+    color: #191919;
+}
+
+
+
+
+/*PARRAFOS DE TODOS LOS HTML*/
+p{
+    font-family: "Khand", sans-serif;
+    font-weight: 400px;
+    font-size: large;
+
+    
+    
+}
+
+/*MEDIA QUERYS*/
+
+/*MOBILE*/
+
+@media screen and (max-width: 600px ) {
+    /*HTML PRODUCTOS*/
+
+    .grid-container{ 
+        
+        grid-template-columns: 1fr;
+    }
+    .product img{
+        width: 25%;
+    }
+
+    /*HTML SERVICIOS*/
+
+    .services-container{ 
+        grid-template-columns: 1fr;
+    }
+
+    .img-services-derecha{
+        justify-content: center;
+        left:0;
+    }
+
+    .img-services{
+        justify-content: center;       
+        
+    }    
+}
+
+
+/*TABLET*/ 
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    /*HTML PRODUCTOS*/
+    .grid-container{   
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        
+    }
+    .product img{        
+        width: 30%;
+    }
+
+    /*HTML SERVICIOS*/
+
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap:20px;
+
+    }
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    /*HTML PRODUCTOS*/
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    /*HTML SERVICIOS*/
+    
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+}
