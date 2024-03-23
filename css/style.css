@@ -233,11 +233,8 @@ nav ul li .footer-item:hover{
 
 /*PARRAFOS DE TODOS LOS HTML*/
 p{
-    font-family: "Khand", sans-serif;
-    font-weight: 400px;
-    font-size: large;
-
-    
+    font-family: "Khand", sans-serif;    
+    font-size: x-large; 
     
 }
 
